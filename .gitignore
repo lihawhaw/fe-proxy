@@ -1,0 +1,8 @@
+dist/
+build/
+node_modules/
+.turbo
+.idea
+.swc
+
+.DS_Store
