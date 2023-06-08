@@ -13,5 +13,8 @@
   },
   "editor.tabSize": 2,
   "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": ["source.fixAll"]
+  "editor.codeActionsOnSave": ["source.fixAll"],
+  "editor.quickSuggestions": {
+    "strings": true
+  }
 }

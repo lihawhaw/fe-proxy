@@ -1,5 +1,5 @@
 {
-  "name": "fe-proxy",
+  "name": "fe-proxy-next",
   "displayName": "FE Proxy",
   "version": "0.1.1",
   "description": "Front-end development resource proxy",
@@ -12,6 +12,9 @@
     "solid-js": "^1.7.6"
   },
   "devDependencies": {
+    "autoprefixer": "^10.4.14",
+    "postcss": "8.4.23",
+    "tailwindcss": "3.3.2",
     "typescript": "5.0.4",
     "vite": "^4.3.9",
     "vite-plugin-crx-mv3": "^0.1.3",

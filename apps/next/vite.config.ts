@@ -1,18 +1,23 @@
-import { defineConfig } from 'vite';
-import solidPlugin from 'vite-plugin-solid';
-import crx from 'vite-plugin-crx-mv3'
-
+import { defineConfig } from "vite";
+import solidPlugin from "vite-plugin-solid";
+import crx from "vite-plugin-crx-mv3";
 
 export default defineConfig(({ mode }) => {
   return {
     plugins: [
       solidPlugin(),
       crx({
-        manifest: './src/manifest.json'
-      })
+        manifest: "./src/manifest.json",
+      }),
     ],
     build: {
-      emptyOutDir: mode === 'production',
+      emptyOutDir: mode === "production",
     },
-  }
-})
+    // resolve: {
+    //   alias: {
+    //     "~/": "./src/",
+    //   },
+    //   extensions: [".ts", "tsx"],
+    // },
+  };
+});
