@@ -1,5 +1,10 @@
 {
   "compilerOptions": {
+    "noEmit": true,
+    "allowJs": false,
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+
     "allowSyntheticDefaultImports": true,
     "esModuleInterop": true,
     "target": "ESNext",
@@ -7,10 +12,11 @@
     "moduleResolution": "node",
     "jsxImportSource": "solid-js",
     "jsx": "preserve",
-    "types": ["vite/client"],
-    "baseUrl": "./",
+    "types": ["vite/client", "node"],
+    "baseUrl": ".",
     "paths": {
       "~/*": ["./src/*"]
     }
-  }
+  },
+  "include": ["src", "vite.config.ts", "node_modules/@types"]
 }
