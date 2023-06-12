@@ -26,11 +26,16 @@ function createData(
 const RulesTable: Component = () => {
   const [proxyRules, setProxyRules] = useStorage<ItemType[]>("proxy-rules", []);
 
-  const onRowEnable = (enable: boolean, id: string) => {
+  const onItemEnable = (enable: boolean, id: string) => {
     const rules = proxyRules().map((item) => ({
       ...item,
       enable: id === item.id ? enable : item.enable,
     }));
+    setProxyRules(rules);
+  };
+
+  const onItemDelete = (id: string) => {
+    const rules = proxyRules().filter((item) => item.id != id);
     setProxyRules(rules);
   };
 
@@ -45,27 +50,31 @@ const RulesTable: Component = () => {
             <TableCell>标签</TableCell>
             <TableCell>排序</TableCell>
             <TableCell>备注</TableCell>
+            <TableCell></TableCell>
           </TableRow>
         </TableHead>
         <TableBody>
           <>
             {mapArray(
               () => proxyRules(),
-              (row) => (
+              (item) => (
                 <TableRow>
                   <TableCell component="th" scope="row">
                     <Checkbox
-                      checked={row.enable}
+                      checked={item.enable}
                       onChange={(event, checked) => {
-                        onRowEnable(checked, row.id);
+                        onItemEnable(checked, item.id);
                       }}
                     />
                   </TableCell>
-                  <TableCell>{row.domain}</TableCell>
-                  <TableCell>{row.target}</TableCell>
-                  <TableCell>{row.tags}</TableCell>
-                  <TableCell>{row.order}</TableCell>
-                  <TableCell>{row.note}</TableCell>
+                  <TableCell>{item.domain}</TableCell>
+                  <TableCell>{item.target}</TableCell>
+                  <TableCell>{item.tags}</TableCell>
+                  <TableCell>{item.order}</TableCell>
+                  <TableCell>{item.note}</TableCell>
+                  <TableCell>
+                    <span onClick={() => onItemDelete(item.id)}>删除</span>
+                  </TableCell>
                 </TableRow>
               )
             )}
