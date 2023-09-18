@@ -1,0 +1,43 @@
+{
+  "name": "FE Proxy",
+  "version": "1.0.1",
+  "description": "Front-end development resource proxy",
+  "author": "李哈哈",
+  "icons": {
+    "16": "images/icon.png",
+    "32": "images/icon.png",
+    "48": "images/icon.png",
+    "64": "images/icon.png",
+    "128": "images/icon.png"
+  },
+  "manifest_version": 3,
+  "action": {
+    "default_icon": {
+      "16": "images/icon.png",
+      "32": "images/icon.png",
+      "48": "images/icon.png",
+      "64": "images/icon.png",
+      "128": "images/icon.png"
+    },
+    "default_popup": "index.html"
+  },
+
+  "permissions": [
+    "cookies",
+    "alarms",
+    "storage",
+    "tabs",
+    "activeTab",
+    "background",
+    "bookmarks"
+  ],
+  "host_permissions": ["*://*/*"],
+
+  "web_accessible_resources": [
+    { "matches": ["<all_urls>"], "resources": ["__plasmo_hmr_proxy__"] }
+  ],
+  "background": {
+    "service_worker": "js/background.js",
+    "type": "module"
+  }
+}

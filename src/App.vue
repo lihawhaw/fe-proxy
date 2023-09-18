@@ -1,7 +1,8 @@
-<script setup lang="ts"></script>
-
 <template>
-  <div>App</div>
+  <a-config-provider :locale="zhCN"> <Popup /> </a-config-provider>
 </template>
 
-<style scoped></style>
+<script setup lang="ts">
+import zhCN from 'ant-design-vue/es/locale/zh_CN'
+import Popup from './popup/index.vue'
+</script>
