@@ -11,7 +11,7 @@ import {
   Checkbox,
 } from "@suid/material";
 import { mapArray } from "solid-js";
-import { ItemType } from "./App";
+import { ItemType } from "~/interfaces";
 
 function createData(
   name: string,
@@ -71,7 +71,7 @@ const RulesTable: Component = () => {
                   <TableCell>{item.target}</TableCell>
                   <TableCell>{item.tags}</TableCell>
                   <TableCell>{item.order}</TableCell>
-                  <TableCell>{item.note}</TableCell>
+                  <TableCell>{item.remark}</TableCell>
                   <TableCell>
                     <span onClick={() => onItemDelete(item.id)}>删除</span>
                   </TableCell>

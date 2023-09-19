@@ -1,29 +1,37 @@
 import { type Component } from "solid-js";
 import { useStorage } from "solidjs-use";
-import { Switch } from "@suid/material";
+import { Switch, Button } from "@suid/material";
 import RulesTable from "./table";
 import { createEffect, createSignal } from "solid-js";
-
-type ProxyConfig = chrome.proxy.ProxyConfig;
-
-export type ItemType = {
-  create_ad: number;
-  domain: string;
-  enable: boolean;
-  id: string;
-  note: string;
-  order: number;
-  tags: string[];
-  target: string;
-};
+import { ItemType, ProxyConfig } from "~/interfaces";
 
 const initData = [
   {
+    id: "0bhK892ybarx-SKuHqkfQ",
+    enable: false,
+    domain: "datamap-*.com",
+    target: "127.0.0.1:8810",
+    order: 0,
+    remark: "",
+    tags: ["datamap"],
     create_ad: +new Date(),
-    domain: "*.chrome.*",
-    enable: true,
-    id: "1685675613940-0",
-    note: "chrome.com",
+  },
+  {
+    create_ad: +new Date(),
+    domain: "*.google.*",
+    enable: false,
+    id: "0bhK892ybarx-SKuHqkff",
+    remark: "",
+    order: 0,
+    tags: ["google"],
+    target: "127.0.0.1:7890",
+  },
+  {
+    create_ad: +new Date(),
+    domain: "developer.chrome.com",
+    enable: false,
+    id: "0bhK892ybarx-SKuHqkfg",
+    remark: "",
     order: 0,
     tags: ["google"],
     target: "127.0.0.1:7890",
@@ -41,7 +49,7 @@ const App: Component = () => {
     const enableList = proxyRules().filter((t) => t.enable);
 
     let pacScript = enableList
-      .map((i, n) => {
+      .map((i, index) => {
         let condition;
         if (i.domain.indexOf("/") > 0) {
           condition = `(shExpMatch(url, "http://${i.domain}") || shExpMatch(url, "https://${i.domain}"))`;
@@ -50,9 +58,9 @@ const App: Component = () => {
         } else {
           condition = `(host == "${i.domain}")`;
         }
-        return `${n === 0 ? "if" : "else if"} ${condition} { return "PROXY ${
-          i.target
-        }; DIRECT"; }`;
+        return `${
+          index === 0 ? "if" : "else if"
+        } ${condition} { return "PROXY ${i.target}; DIRECT"; }`;
       })
       .join("\n");
 
@@ -94,25 +102,35 @@ const App: Component = () => {
   createEffect(() => {
     proxyEnable();
     proxyRules();
-
     updateProxy();
   });
 
+  const handleSwitchChange = (event, value) => {
+    setProxyEnable(value);
+  };
+
+  const handleResetTable = () => {
+    setProxyRules(initData);
+  };
+
   return (
-    <div class="flex">
+    <div>
       <div class="flex-1"></div>
 
-      <div class="flex-1">
-        <div>{proxyEnable()}</div>
+      <div class="flex-1 container">
+        {/* <div>{proxyEnable()}</div> */}
         <Switch
           checked={proxyEnable()}
-          onChange={(event, value) => {
-            setProxyEnable(value);
-          }}
+          onChange={handleSwitchChange}
           inputProps={{ "aria-label": "controlled" }}
         />
-        <div>{JSON.stringify(proxyRules(), null, 4)}</div>
+        {/* <div>{JSON.stringify(proxyRules(), null, 4)}</div> */}
         <RulesTable />
+      </div>
+      <div>
+        <Button variant="outlined" onClick={handleResetTable}>
+          reset
+        </Button>
       </div>
     </div>
   );

@@ -9,7 +9,7 @@
   },
   "action": {
     "default_title": "FE Proxy",
-    "default_popup": "../popup.html"
+    "default_popup": "../setting.html"
   },
   "options_page": "../setting.html",
   "background": {
@@ -21,6 +21,13 @@
       "resources": ["assets/*"]
     }
   ],
-  "permissions": ["proxy", "storage"],
+  "permissions": [
+    "proxy",
+    "storage",
+    "webRequest",
+    "declarativeNetRequest",
+    "declarativeNetRequestFeedback"
+  ],
+  "host_permissions": ["<all_urls>"],
   "manifest_version": 3
 }

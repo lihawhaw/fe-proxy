@@ -19,13 +19,13 @@ type ItemType = {
 const initData = [
   {
     create_ad: +new Date(),
-    domain: "*.chrome.*",
+    domain: "datamap-*.com",
     enable: true,
-    id: "1685675613940-0",
-    note: "chrome.com",
+    id: "0bhK892ybarx-SKuHqkfQ",
+    note: "dd",
     order: 0,
-    tags: ["google"],
-    target: "127.0.0.1:7890",
+    tags: ["datamap"],
+    target: "127.0.0.1:8810",
   },
 ];
 
@@ -58,15 +58,19 @@ const App: Component = () => {
     chrome.proxy.settings.set({ scope: "regular", value });
   };
 
+  const handleSwitchChange = (event, value) => {
+    setProxyEnable(value);
+    if (value) {
+      setProxy("pac_script");
+    } else {
+      setProxy("system");
+    }
+  };
+
   return (
     <div class="text-1xl">
       <div>{proxyEnable()}</div>
-      <Switch
-        checked={proxyEnable()}
-        onChange={(event, value) => {
-          setProxyEnable(value);
-        }}
-      />
+      <Switch checked={proxyEnable()} onChange={handleSwitchChange} />
       <div>{JSON.stringify(proxyRules(), null, 4)}</div>
       <RulesTable />
     </div>
