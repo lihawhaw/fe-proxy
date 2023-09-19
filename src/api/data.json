@@ -1,0 +1,833 @@
+[
+  {
+    "id": "1690771932777-0",
+    "domain": "*studio.data*.com/table*",
+    "target": "127.0.0.1:1023",
+    "tags": ["可视化建表"],
+    "order": 103,
+    "note": "",
+    "create_at": 1690771932777,
+    "enable": false
+  },
+  {
+    "id": "1690771932777-1",
+    "domain": "*studio.data*.com/dt-table*",
+    "target": "127.0.0.1:1024",
+    "tags": ["旧版可视化建表"],
+    "order": 102,
+    "note": "",
+    "create_at": 1690771932777,
+    "enable": false
+  },
+  {
+    "id": "1690771932777-2",
+    "domain": "*studio.data*.com/publish*",
+    "target": "127.0.0.1:8078",
+    "tags": ["发布管理"],
+    "order": 101,
+    "note": "",
+    "create_at": 1690771932777,
+    "enable": false
+  },
+  {
+    "id": "1690771932777-3",
+    "domain": "*studio.data*.com",
+    "target": "127.0.0.1:8081",
+    "tags": ["IDE"],
+    "order": 100,
+    "note": "",
+    "create_at": 1690771932777,
+    "enable": false
+  },
+  {
+    "id": "1690771932777-4",
+    "domain": "*studio.data*.com",
+    "target": "127.0.0.1:1025",
+    "tags": ["test"],
+    "order": 100,
+    "note": "",
+    "create_at": 1690771932777,
+    "enable": false
+  },
+  {
+    "id": "1690771932777-5",
+    "domain": "*bigdata.xiaojukeji.com/dps_datamap_fe/*",
+    "target": "127.0.0.1:7002",
+    "tags": ["datamap"],
+    "order": 99,
+    "note": "",
+    "create_at": 1690771932777,
+    "enable": false
+  },
+  {
+    "id": "1690771932777-6",
+    "domain": "datamap-*.com",
+    "target": "127.0.0.1:8810",
+    "tags": ["数据地图"],
+    "order": 99,
+    "note": "",
+    "create_at": 1690771932777,
+    "enable": true
+  },
+  {
+    "id": "1690771932777-7",
+    "domain": "meta*.com/dist/mail/*",
+    "target": "127.0.0.1:8884",
+    "tags": ["资产邮件管理"],
+    "order": 98,
+    "note": "",
+    "create_at": 1690771932777,
+    "enable": false
+  },
+  {
+    "id": "1690771932777-8",
+    "domain": "meta-*.com/mail/*",
+    "target": "127.0.0.1:8884",
+    "tags": ["资产邮件管理"],
+    "order": 98,
+    "note": "",
+    "create_at": 1690771932777,
+    "enable": false
+  },
+  {
+    "id": "1690771932777-9",
+    "domain": "meta-*.com",
+    "target": "127.0.0.1:8881",
+    "tags": ["资产管理"],
+    "order": 97,
+    "note": "",
+    "create_at": 1690771932777,
+    "enable": true
+  },
+  {
+    "id": "1690771932777-10",
+    "domain": "*schedule.data*.com",
+    "target": "127.0.0.1:8078",
+    "tags": ["调度"],
+    "order": 96,
+    "note": "",
+    "create_at": 1690771932777,
+    "enable": false
+  },
+  {
+    "id": "1690771932777-11",
+    "domain": "*clone.data*.com",
+    "target": "127.0.0.1:8078",
+    "tags": ["跨项目克隆"],
+    "order": 96,
+    "note": "",
+    "create_at": 1690771932777,
+    "enable": false
+  },
+  {
+    "id": "1690771932777-12",
+    "domain": "*sync.data*.com",
+    "target": "127.0.0.1:8882",
+    "tags": ["同步中心"],
+    "order": 94,
+    "note": "",
+    "create_at": 1690771932777,
+    "enable": false
+  },
+  {
+    "id": "1690771932777-13",
+    "domain": "*monitor.data*.com",
+    "target": "localhost:8898",
+    "tags": ["监控告警"],
+    "order": 93,
+    "note": "",
+    "create_at": 1690771932777,
+    "enable": true
+  },
+  {
+    "id": "1690771932777-14",
+    "domain": "*pam.data-*.com",
+    "target": "127.0.0.1:8883",
+    "tags": ["项目管理"],
+    "order": 92,
+    "note": "",
+    "create_at": 1690771932777,
+    "enable": true
+  },
+  {
+    "id": "1690771932777-15",
+    "domain": "*streamops.data*.com",
+    "target": "127.0.0.1:8082",
+    "tags": [],
+    "order": 91,
+    "note": "",
+    "create_at": 1690771932777,
+    "enable": false
+  },
+  {
+    "id": "1690771932777-16",
+    "domain": "*quality.data*.com",
+    "target": "127.0.0.1:1026",
+    "tags": ["数据质量"],
+    "order": 90,
+    "note": "",
+    "create_at": 1690771932777,
+    "enable": false
+  },
+  {
+    "id": "1690771932777-17",
+    "domain": "*streamops.data*.com",
+    "target": "127.0.0.1",
+    "tags": ["实时运维"],
+    "order": 50,
+    "note": "",
+    "create_at": 1690771932777,
+    "enable": false
+  },
+  {
+    "id": "1690771932777-18",
+    "domain": "*monitor.data*.com",
+    "target": "127.0.0.1:8889",
+    "tags": ["监控告警"],
+    "order": 50,
+    "note": "",
+    "create_at": 1690771932777,
+    "enable": false
+  },
+  {
+    "create_ad": 1692842281142,
+    "domain": "objects.githubusercontent.com",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "note": "objects.githubusercontent.com",
+    "order": "10",
+    "id": "1692842281142-0",
+    "enable": true
+  },
+  {
+    "create_ad": 1692791319658,
+    "domain": "code.visualstudio.com",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "note": "code.visualstudio.com",
+    "order": "10",
+    "id": "1692791319658-0",
+    "enable": true
+  },
+  {
+    "create_ad": 1692175228002,
+    "domain": "g2-v4.antv.vision",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "note": "g2-v4.antv.vision",
+    "order": "10",
+    "id": "1692175228003-0",
+    "enable": true
+  },
+  {
+    "create_ad": 1692014061071,
+    "domain": "keycloak.theia-cloud.io",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "note": "keycloak.theia-cloud.io",
+    "order": "10",
+    "id": "1692014061071-0",
+    "enable": true
+  },
+  {
+    "create_ad": 1692007987456,
+    "domain": "zh-tw.gravatar.com",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "note": "zh-tw.gravatar.com",
+    "order": "10",
+    "id": "1692007987456-0",
+    "enable": true
+  },
+  {
+    "create_ad": 1691568224478,
+    "domain": "upload.wikimedia.org",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "note": "upload.wikimedia.org",
+    "order": "10",
+    "id": "1691568224478-0",
+    "enable": true
+  },
+  {
+    "create_ad": 1691567702070,
+    "domain": "www.electronjs.org",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "note": "www.electronjs.org",
+    "order": "10",
+    "id": "1691567702070-0",
+    "enable": true
+  },
+  {
+    "create_ad": 1691465566747,
+    "domain": "ddms.mihtool.com",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "note": "",
+    "order": "10",
+    "id": "1691465566747-0",
+    "enable": true
+  },
+  {
+    "create_ad": 1691465537692,
+    "domain": "www.mihtool.com",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "note": "",
+    "order": "10",
+    "id": "1691465537693-0",
+    "enable": true
+  },
+  {
+    "create_ad": 1691465490375,
+    "domain": "fanyi.youdao.com",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "note": "有道",
+    "order": "10",
+    "id": "1691465490376-0",
+    "enable": true
+  },
+  {
+    "id": "1690771932777-19",
+    "domain": "cdn.carbonads.com",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "order": 10,
+    "note": "standard",
+    "create_at": 1690771932777,
+    "enable": true
+  },
+  {
+    "id": "1690771932777-20",
+    "domain": "cdn.rawgit.com",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "order": 10,
+    "note": "standard",
+    "create_at": 1690771932777,
+    "enable": true
+  },
+  {
+    "id": "1690771932777-21",
+    "domain": "gw.alipayobjects.com",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "order": 10,
+    "note": "antv",
+    "create_at": 1690771932777,
+    "enable": true
+  },
+  {
+    "id": "1690771932777-22",
+    "domain": "g2-v4.antv.vision",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "order": 10,
+    "note": "antv",
+    "create_at": 1690771932777,
+    "enable": false
+  },
+  {
+    "id": "1690771932777-23",
+    "domain": "dl.google.com",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "order": 10,
+    "note": "dl.google.com",
+    "create_at": 1690771932777,
+    "enable": true
+  },
+  {
+    "id": "1690771932777-24",
+    "domain": "tools.google.com",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "order": 10,
+    "note": "tools.google.com",
+    "create_at": 1690771932777,
+    "enable": true
+  },
+  {
+    "id": "1690771932777-25",
+    "domain": "private-alipayobjects.alipay.com",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "order": 10,
+    "note": "antv",
+    "create_at": 1690771932777,
+    "enable": true
+  },
+  {
+    "create_ad": 1694140984327,
+    "domain": "stablediffusionweb.com",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "note": "",
+    "order": "1",
+    "id": "1694140984327-0",
+    "enable": true
+  },
+  {
+    "create_ad": 1692175253372,
+    "domain": "*.antv.vision",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "note": "*.antv.vision",
+    "order": "1",
+    "id": "1692175253372-0",
+    "enable": true
+  },
+  {
+    "create_ad": 1692167830950,
+    "domain": "*module-federation.io",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "note": "module-federation.io",
+    "order": "1",
+    "id": "1692167830950-0",
+    "enable": true
+  },
+  {
+    "create_ad": 1692014085043,
+    "domain": "*theia-cloud.io",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "note": "keycloak.theia-cloud.io",
+    "order": "1",
+    "id": "1692014085043-0",
+    "enable": true
+  },
+  {
+    "create_ad": 1692008013304,
+    "domain": "*gravatar.com",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "note": "zh-tw.gravatar.com",
+    "order": "1",
+    "id": "1692008013304-0",
+    "enable": true
+  },
+  {
+    "create_ad": 1691567735501,
+    "domain": "*.electronjs.org",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "note": "www.electronjs.org",
+    "order": "1",
+    "id": "1691567735501-0",
+    "enable": true
+  },
+  {
+    "id": "1690771932777-26",
+    "domain": "lyz.js.org",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "order": 1,
+    "note": "lyz.js.org",
+    "create_at": 1690771932777,
+    "enable": true
+  },
+  {
+    "id": "1690771932777-27",
+    "domain": "firebase-dot-devsite-v2-prod.appspot.com",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "order": 1,
+    "note": "firebase-dot-devsite-v2-prod.appspot.com",
+    "create_at": 1690771932777,
+    "enable": true
+  },
+  {
+    "id": "1690771932777-28",
+    "domain": "firebase.google.com",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "order": 1,
+    "note": "firebase.google.com",
+    "create_at": 1690771932777,
+    "enable": true
+  },
+  {
+    "id": "1690771932777-29",
+    "domain": "speed.cloudflare.com",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "order": 1,
+    "note": "speed.cloudflare.com",
+    "create_at": 1690771932777,
+    "enable": true
+  },
+  {
+    "id": "1690771932777-30",
+    "domain": "*cip.cc",
+    "target": "127.0.0.1:7890",
+    "tags": [],
+    "order": 1,
+    "note": "",
+    "create_at": 1690771932777,
+    "enable": false
+  },
+  {
+    "id": "1690771932777-31",
+    "domain": "ip111.cn",
+    "target": "127.0.0.1:7890",
+    "tags": [],
+    "order": 1,
+    "note": "",
+    "create_at": 1690771932777,
+    "enable": false
+  },
+  {
+    "id": "1690771932777-32",
+    "domain": "*.github.io",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "order": 1,
+    "note": "github.io",
+    "create_at": 1690771932777,
+    "enable": true
+  },
+  {
+    "create_ad": 1691385315224,
+    "domain": "*tailwindcss.com",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "note": "",
+    "order": 0,
+    "id": "1691385315224-0",
+    "enable": true
+  },
+  {
+    "create_ad": 1691385197935,
+    "domain": "*tailwindui.com",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "note": "",
+    "order": 0,
+    "id": "1691385197935-0",
+    "enable": true
+  },
+  {
+    "id": "1690771932777-33",
+    "domain": "anthropic.com",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "order": 0,
+    "note": "claude.ai",
+    "create_at": 1690771932777,
+    "enable": true
+  },
+  {
+    "id": "1690771932777-34",
+    "domain": "cdn.jsdelivr.net",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "order": 0,
+    "note": "cdn.jsdelivr.net",
+    "create_at": 1690771932777,
+    "enable": true
+  },
+  {
+    "id": "1690771932777-35",
+    "domain": "blog.openreplay.com",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "order": 0,
+    "note": "blog.openreplay.com",
+    "create_at": 1690771932777,
+    "enable": true
+  },
+  {
+    "id": "1690771932777-36",
+    "domain": "*.codesandbox.*",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "order": 0,
+    "note": "codesandbox.io",
+    "create_at": 1690771932777,
+    "enable": true
+  },
+  {
+    "id": "1690771932777-37",
+    "domain": "ajax.googleapis.com",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "order": 0,
+    "note": "ajax.googleapis.com",
+    "create_at": 1690771932777,
+    "enable": true
+  },
+  {
+    "id": "1690771932777-38",
+    "domain": "translate.googleapis.com",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "order": 0,
+    "note": "translate.googleapis.com",
+    "create_at": 1690771932777,
+    "enable": true
+  },
+  {
+    "id": "1690771932777-39",
+    "domain": "*.chrome.*",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "order": 0,
+    "note": "chrome.com",
+    "create_at": 1690771932777,
+    "enable": true
+  },
+  {
+    "id": "1690771932777-40",
+    "domain": "*vercel.*",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "order": 0,
+    "note": "vercel.app",
+    "create_at": 1690771932777,
+    "enable": true
+  },
+  {
+    "id": "1690771932777-41",
+    "domain": "*.midjourney.*",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "order": 0,
+    "note": "midjourney.com",
+    "create_at": 1690771932777,
+    "enable": true
+  },
+  {
+    "id": "1690771932777-42",
+    "domain": "*.githubusercontent.com",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "order": 0,
+    "note": "githubusercontent.com",
+    "create_at": 1690771932777,
+    "enable": true
+  },
+  {
+    "id": "1690771932777-43",
+    "domain": "unpkg.com",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "order": 0,
+    "note": "unpkg.com",
+    "create_at": 1690771932777,
+    "enable": true
+  },
+  {
+    "id": "1690771932777-44",
+    "domain": "*.js.org",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "order": 0,
+    "note": "js.org",
+    "create_at": 1690771932777,
+    "enable": true
+  },
+  {
+    "id": "1690771932777-45",
+    "domain": "youtube.*",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "order": 0,
+    "note": "youtube",
+    "create_at": 1690771932777,
+    "enable": true
+  },
+  {
+    "id": "1690771932777-47",
+    "domain": "*.google.*",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "order": 0,
+    "note": "google",
+    "create_at": 1690771932777,
+    "enable": true
+  },
+  {
+    "id": "1690771932777-48",
+    "domain": "*.github.*",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "order": 0,
+    "note": "github",
+    "create_at": 1690771932777,
+    "enable": true
+  },
+  {
+    "id": "1690771932777-49",
+    "domain": "github.com",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "order": 0,
+    "note": "github.com",
+    "create_at": 1690771932777,
+    "enable": true
+  },
+  {
+    "id": "1690771932777-50",
+    "domain": "*pureinfotech.com",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "order": 0,
+    "note": "pureinfotech",
+    "create_at": 1690771932777,
+    "enable": true
+  },
+  {
+    "id": "1690771932777-51",
+    "domain": "*openai.com",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "order": 0,
+    "note": "openai",
+    "create_at": 1690771932777,
+    "enable": true
+  },
+  {
+    "id": "1690771932777-52",
+    "domain": "dev.*",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "order": 0,
+    "note": "dev.to",
+    "create_at": 1690771932777,
+    "enable": true
+  },
+  {
+    "id": "1690771932777-53",
+    "domain": "*medium.*",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "order": 0,
+    "note": "medium.com",
+    "create_at": 1690771932777,
+    "enable": true
+  },
+  {
+    "id": "1690771932777-54",
+    "domain": "*firebaseio.*",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "order": 0,
+    "note": "firebaseio.com",
+    "create_at": 1690771932777,
+    "enable": true
+  },
+  {
+    "id": "1690771932777-55",
+    "domain": "*staticblitz.*",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "order": 0,
+    "note": "staticblitz.com",
+    "create_at": 1690771932777,
+    "enable": true
+  },
+  {
+    "id": "1690771932777-56",
+    "domain": "*docker*",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "order": 0,
+    "note": "docker",
+    "create_at": 1690771932777,
+    "enable": true
+  },
+  {
+    "id": "1690771932777-57",
+    "domain": "*ionic*",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "order": 0,
+    "note": "ionic",
+    "create_at": 1690771932777,
+    "enable": true
+  },
+  {
+    "id": "1690771932777-58",
+    "domain": "*npmjs.com",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "order": 0,
+    "note": "npmjs",
+    "create_at": 1690771932777,
+    "enable": true
+  },
+  {
+    "create_ad": 1690771954341,
+    "id": "1690771932777-59",
+    "domain": "*googleusercontent*",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "order": 0,
+    "note": "谷歌静态资源",
+    "create_at": 1690771932777,
+    "enable": true
+  },
+  {
+    "id": "1690771932777-60",
+    "domain": "*nextjs.org",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "order": 0,
+    "note": "nextjs",
+    "create_at": 1690771932777,
+    "enable": true
+  },
+  {
+    "id": "1690771932777-61",
+    "domain": "codesandbox.io",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "order": 0,
+    "note": "codesandbox",
+    "create_at": 1690771932777,
+    "enable": true
+  },
+  {
+    "id": "1690771932777-62",
+    "domain": "*wikipedia.org",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "order": 0,
+    "note": "wiki",
+    "create_at": 1690771932777,
+    "enable": true
+  },
+  {
+    "id": "1690771932777-63",
+    "domain": "*ant.design",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "order": 0,
+    "note": "antd",
+    "create_at": 1690771932777,
+    "enable": true
+  },
+  {
+    "id": "1690771932777-64",
+    "domain": "*github.*",
+    "target": "127.0.0.1:7890",
+    "tags": ["github"],
+    "order": 0,
+    "note": "github",
+    "create_at": 1690771932777,
+    "enable": true
+  },
+  {
+    "id": "1690771932777-65",
+    "domain": "*google.*",
+    "target": "127.0.0.1:7890",
+    "tags": ["google"],
+    "order": 0,
+    "note": "google",
+    "create_at": 1690771932777,
+    "enable": true
+  }
+]

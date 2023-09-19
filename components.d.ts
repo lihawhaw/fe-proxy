@@ -7,6 +7,6 @@ export {}
 
 declare module 'vue' {
   export interface GlobalComponents {
-    AConfigProvider: typeof import('ant-design-vue/es')['ConfigProvider']
+    AConfigProvider: (typeof import('ant-design-vue/es'))['ConfigProvider']
   }
 }
